@@ -72,13 +72,13 @@ function App() {
       </div>
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
-          <div className="animate__animated animate__fadeInUp animate__delay-3s">
-            <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <img src="./assets/arga1.png" className="w-10 rounded-md" />
+        <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-8 grid-cols-1">
+          <div className="animate__animated animate__fadeInUp animate__delay-3s flex flex-col items-center text-center md:items-start md:text-left">
+            <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+              <img src="./assets/arga1.png" className="w-10 rounded-md" alt="Avatar Small" />
               <q>Avoid or just undertake it</q>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 w-full text-center md:text-left">
               <ShinyText text="Hi I'm Argani Fernanda Widianto" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
@@ -86,24 +86,25 @@ function App() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-sm sm:text-base md:text-lg leading-relaxed mb-6"
+              className="text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-justify md:text-left"
             />
-            <div className="flex items-center sm:gap-4 gap-2">
-              <a 
-                href="./assets/CV.pdf" 
-                download="Argani_Fernanda_Widianto_CV.pdf" 
-                className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
+              <a
+                href="./assets/CV.pdf"
+                download="Argani_Fernanda_Widianto_CV.pdf"
+                className="font-semibold bg-[#1a1a1a] p-3 px-5 sm:p-4 sm:px-6 text-xs sm:text-sm rounded-full border border-gray-700 hover:bg-[#222] transition-colors w-full sm:w-auto text-center"
               >
                 <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
               </a>
-
-              <a href="#project" className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors">
+              <a
+                href="#project"
+                className="font-semibold bg-[#1a1a1a] p-3 px-5 sm:p-4 sm:px-6 text-xs sm:text-sm rounded-full border border-gray-700 hover:bg-[#222] transition-colors w-full sm:w-auto text-center"
+              >
                 <ShinyText text="Explore My Projects" disabled={false} speed={3} className="custom-class" />
               </a>
             </div>
-
           </div>
-          <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
+          <div className="w-full flex justify-center md:justify-end animate__animated animate__fadeInUp animate__delay-4s">
             <ProfileCard
               name="Argani F.W"
               title="Web Developer"

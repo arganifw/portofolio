@@ -73,25 +73,11 @@ export const listTools = [
     dad: "600",
   },
   {
-    id: 7,
-    gambar: Tools7,
-    nama: "Node JS",
-    ket: "Javascript Runtime",
-    dad: "700",
-  },
-  {
     id: 8,
     gambar: Tools8,
     nama: "Github",
     ket: "Repository",
     dad: "800",
-  },
-  {
-    id: 9,
-    gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
-    dad: "900",
   },
   {
     id: 10,

@@ -19,7 +19,14 @@ const app = initializeApp(firebaseConfig);
 // Auth
 export const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
-export const loginWithGoogle = () => signInWithPopup(auth, provider);
+export const loginWithGoogle = async () => {
+  try {
+    await signInWithPopup(auth, provider);
+  } catch (error) {
+    console.error("Gagal login Google:", error.message);
+    alert("Gagal login: " + error.message);
+  }
+};
 export const logout = () => signOut(auth);
 
 // Firestore
